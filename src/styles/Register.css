@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  padding: 20px;
+}
+
+.register-card {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+}
+
+.register-card h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.form {
+  width: 100%;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.form_input {
+  width: 100%;
+  padding: 1.25rem 0.75rem 0.5rem;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: none;
+  outline: none;
+  color: #333;
+}
+
+.form_label {
+  position: absolute;
+  top: 1rem;
+  left: 0.75rem;
+  background-color: white;
+  padding: 0 5px;
+  color: #666;
+  font-size: 14px;
+  transition: 0.2s ease all;
+  pointer-events: none;
+}
+
+.form_input:focus + .form_label,
+.form_input:not(:placeholder-shown) + .form_label {
+  top: -0.6rem;
+  left: 0.5rem;
+  font-size: 12px;
+  background-color: #fff;
+  color: #333;
+}
+
+.radio-group-wrapper label {
+  font-size: 14px;
+  color: #666;
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.radio-group {
+  display: flex;
+  gap: 20px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.radio-input {
+  margin-right: 8px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.create-account-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.create-account-button:hover {
+  background-color: #5a099c;
+}
+
+.star {
+  color: red;
+}
