@@ -57,7 +57,7 @@
   left: 0.75rem;
   background-color: white;
   padding: 0 5px;
-  color: #666;
+  color: #6a0dad;
   font-size: 14px;
   transition: 0.2s ease all;
   pointer-events: none;
@@ -69,7 +69,7 @@
   left: 0.5rem;
   font-size: 12px;
   background-color: #fff;
-  color: #333;
+  color: #6a0dad;
 }
 
 .radio-group-wrapper label {
