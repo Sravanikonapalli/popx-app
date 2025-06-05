@@ -9,12 +9,13 @@
 }
 
 .login-card {
-  background-color: white;
+  background-color: #edeff1;
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 450px;
+  height: 100vh;
   box-sizing: border-box;
   text-align: left; 
 }
@@ -54,7 +55,7 @@
   left: 0.75rem;
   font-size: 14px;
   color: #6a0dad;
-  background-color: white;
+  background-color: transparent;
   padding: 0 4px;
   transition: 0.2s ease all;
   pointer-events: none;
@@ -66,6 +67,7 @@
   left: 0.5rem;
   font-size: 12px;
   color: #6a0dad;
+  background-color: #edeff1;
 }
 
 .login-button {
