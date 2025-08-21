@@ -4,7 +4,7 @@ This project is a fully responsive React web application built to match a provid
 
 ## Live Demo
 
- [Visit the Hosted Site](https://popx-app-mu.vercel.app)
+ [Visit the Hosted Vercel Site](https://popx-app-mu.vercel.app)
 
 ## GitHub Repository
 
@@ -38,16 +38,20 @@ git clone https://github.com/Sravanikonapalli/popx-app
 cd popx-app
 ```
 ### 2. Install dependencies
-
+```bash
+cd frontend
 npm install
+```
 
 ### 3. Run the development server
+```bash
 npm start
+```
 
 ----
 
 ## Deployment
-This project is deployed using **Vercel**. You can easily deploy by pushing the code to a GitHub repository and linking it to your vercel account.
+This project is deployed using **Vercel**. 
 
 ---
 

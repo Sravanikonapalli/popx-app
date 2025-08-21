@@ -7,10 +7,10 @@
 }
 
 .register-container {
-  display: flex;
+  display: flex;                 
   justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  align-items: center;          
+  min-height: 100vh;             
   background-color: #f0f2f5;
   padding: 20px;
 }
@@ -18,10 +18,10 @@
 .register-card {
   background-color: #edeff1;
   padding: 40px;
-  border-radius: 10px;
+  border-radius: 10px;          
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 450px;
+  max-width: 450px;              
 }
 
 .register-card h2 {
@@ -42,7 +42,7 @@
 
 .form_input {
   width: 100%;
-  padding: 1.25rem 0.75rem 0.5rem;
+  padding: 20px 12px 8px;        
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -51,24 +51,26 @@
   color: #333;
 }
 
+/* Floating label (sits inside input by default) */
 .form_label {
   position: absolute;
-  top: 1rem;
-  left: 0.75rem;
-  background-color:transparent;
+  top: 16px;                     
+  left: 12px;
+  background-color: transparent;
   padding: 0 5px;
   color: #6a0dad;
   font-size: 14px;
-  transition: 0.2s ease all;
-  pointer-events: none;
+  transition: 0.2s ease all;     
+  pointer-events: none;         
 }
 
+/* When input is focused OR has text, move label up */
 .form_input:focus + .form_label,
 .form_input:not(:placeholder-shown) + .form_label {
-  top: -0.6rem;
-  left: 0.5rem;
+  top: -10px;
+  left: 8px;
   font-size: 12px;
-  background-color: #edeff1;
+  background-color: #edeff1;     
   color: #6a0dad;
 }
 
@@ -93,7 +95,7 @@
 
 .radio-input {
   margin-right: 8px;
-  transform: scale(1.2);
+  transform: scale(1.2);         /* make radio button bigger */
   cursor: pointer;
 }
 

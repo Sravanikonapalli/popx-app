@@ -40,7 +40,7 @@
 
 .input-field {
   width: 100%;
-  padding: 1.25rem 0.75rem 0.5rem;
+  padding: 20px 12px 8px;
   border: 1px solid #ddd;
   border-radius: 5px;
   font-size: 16px;
@@ -51,8 +51,8 @@
 
 .floating-label {
   position: absolute;
-  top: 1rem;
-  left: 0.75rem;
+  top: 16px;
+  left: 12px;
   font-size: 14px;
   color: #6a0dad;
   background-color: transparent;
@@ -61,10 +61,19 @@
   pointer-events: none;
 }
 
-.input-field:focus + .floating-label,
+/* When the input is focused, move the label up */
+.input-field:focus + .floating-label {
+  top: -10px;
+  left: 8px;
+  font-size: 12px;
+  color: #6a0dad;
+  background-color: #edeff1;
+}
+
+/* When the input has text (not placeholder), keep the label up */
 .input-field:not(:placeholder-shown) + .floating-label {
-  top: -0.6rem;
-  left: 0.5rem;
+  top: -10px;
+  left: 8px;
   font-size: 12px;
   color: #6a0dad;
   background-color: #edeff1;

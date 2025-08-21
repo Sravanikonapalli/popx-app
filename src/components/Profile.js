@@ -18,11 +18,18 @@ const Profile = () => {
       <div className="profile-card">
         <div className="profile-header">
           <div className="profile-image-wrapper">
-            <img
-              src="https://i.postimg.cc/W1nBf5KT/silver-gradient-social-media-chatting-online-blank-profile-picture-head-and-body-icon-people-standin.jpg"
-              alt="Profile"
-              className="profile-image"
+            <div className='profile-image'>
+              {user.name ? (
+                user.name[0]?.toUpperCase()
+              ) : (
+                <img
+                  src="https://i.postimg.cc/W1nBf5KT/silver-gradient-social-media-chatting-online-blank-profile-picture-head-and-body-icon-people-standin.jpg"
+                  alt="Profile"
+                  className="profile-img-tag"
             />
+              )}
+            </div>
+            
             <button className="camera-button" title="Change profile picture">
               <FaCameraRetro size={16} />
             </button>
